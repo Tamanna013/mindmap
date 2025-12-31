@@ -1,0 +1,113 @@
+.toolbar {
+  background: #34495e;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2c3e50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.toolbar-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #ffffff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-button:hover:not(.disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #95a5a6;
+}
+
+.toolbar-button.expand-all {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.toolbar-button.collapse-all {
+  background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);
+}
+
+.toolbar-button.drill-down {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.toolbar-button.drill-up {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.toolbar-button.fit-view {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.toolbar-button.add-node {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.toolbar-button.documentation {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.toolbar-button.download {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #2c3e50;
+}
+
+.button-icon {
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .toolbar {
+    padding: 10px 15px;
+  }
+
+  .toolbar-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .button-icon {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .toolbar-group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .toolbar-button {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}

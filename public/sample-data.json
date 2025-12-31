@@ -1,0 +1,127 @@
+{
+  "id": "root",
+  "title": "Software Architecture",
+  "summary": "Modern software architecture principles and patterns",
+  "description": "A comprehensive overview of software architecture covering design patterns, scalability, security, and best practices for building robust applications.",
+  "metadata": {
+    "created": "2024-01-01",
+    "lastModified": "2024-01-15",
+    "version": "2.0",
+    "author": "Architecture Team",
+    "complexity": "high"
+  },
+  "children": [
+    {
+      "id": "design-patterns",
+      "title": "Design Patterns",
+      "summary": "Common software design patterns",
+      "description": "Reusable solutions to commonly occurring problems in software design and architecture.",
+      "metadata": {
+        "category": "patterns",
+        "difficulty": "intermediate"
+      },
+      "children": [
+        {
+          "id": "creational",
+          "title": "Creational Patterns",
+          "summary": "Object creation mechanisms",
+          "description": "Design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.",
+          "children": [
+            {
+              "id": "singleton",
+              "title": "Singleton",
+              "summary": "Ensure a class has only one instance",
+              "description": "Ensures a class has only one instance and provides a global point of access to it."
+            },
+            {
+              "id": "factory",
+              "title": "Factory Method",
+              "summary": "Create objects without specifying exact classes",
+              "description": "Creates objects without specifying the exact class of object that will be created."
+            }
+          ]
+        },
+        {
+          "id": "structural",
+          "title": "Structural Patterns",
+          "summary": "Object composition patterns",
+          "description": "Design patterns that ease the design by identifying a simple way to realize relationships between entities.",
+          "children": [
+            {
+              "id": "adapter",
+              "title": "Adapter",
+              "summary": "Allow incompatible interfaces to work together",
+              "description": "Allows objects with incompatible interfaces to collaborate."
+            },
+            {
+              "id": "decorator",
+              "title": "Decorator",
+              "summary": "Add behavior to objects dynamically",
+              "description": "Allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scalability",
+      "title": "Scalability",
+      "summary": "Building scalable systems",
+      "description": "Principles and techniques for building systems that can handle increased load and growth.",
+      "metadata": {
+        "category": "performance",
+        "priority": "high"
+      },
+      "children": [
+        {
+          "id": "horizontal-scaling",
+          "title": "Horizontal Scaling",
+          "summary": "Scale by adding more servers",
+          "description": "Scaling by adding more servers to the pool of resources to handle increased load."
+        },
+        {
+          "id": "vertical-scaling",
+          "title": "Vertical Scaling",
+          "summary": "Scale by adding more power",
+          "description": "Scaling by adding more power (CPU, RAM) to existing servers."
+        },
+        {
+          "id": "load-balancing",
+          "title": "Load Balancing",
+          "summary": "Distribute load across multiple servers",
+          "description": "Technique to distribute incoming network traffic across multiple servers to ensure no single server bears too much demand."
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "summary": "Application security principles",
+      "description": "Essential security principles and practices for building secure applications.",
+      "metadata": {
+        "category": "security",
+        "compliance": "required"
+      },
+      "children": [
+        {
+          "id": "authentication",
+          "title": "Authentication",
+          "summary": "Verify user identity",
+          "description": "Process of verifying the identity of a user or system."
+        },
+        {
+          "id": "authorization",
+          "title": "Authorization",
+          "summary": "Control access to resources",
+          "description": "Process of determining whether a user has permission to access a specific resource."
+        },
+        {
+          "id": "encryption",
+          "title": "Encryption",
+          "summary": "Protect data confidentiality",
+          "description": "Process of converting information or data into a code to prevent unauthorized access."
+        }
+      ]
+    }
+  ]
+}
