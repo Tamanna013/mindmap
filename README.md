@@ -1,12 +1,5 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 # Interactive Mindmap UI
 
 A comprehensive React-based interactive mindmap visualization tool with TypeScript and D3.js integration.
@@ -24,21 +17,24 @@ A comprehensive React-based interactive mindmap visualization tool with TypeScri
 
 ## Installation
 
-\\```bash
-
 # Clone the repository
 
-git clone <repository-url>
+```bash
+git clone https://github.com/Tamanna013/mindmap.git
 cd interactive-mindmap-ui
+```
 
 # Install dependencies
 
+```bash
 npm install
+```
 
 # Start development server
 
+```bash
 npm start
-\\```
+```
 
 ## Usage
 
@@ -48,32 +44,6 @@ npm start
 4. **Editing**: Select a node and use the edit button in the side panel to modify content
 5. **Drill Navigation**: Use toolbar buttons to drill down into specific branches
 6. **Export**: Download your mindmap data using the download button
-
-## Project Structure
-
-\\`
-src/
-├── components/
-│   ├── Mindmap/
-│   │   ├── Mindmap.tsx
-│   │   ├── Mindmap.css
-│   │   ├── Tooltip.tsx
-│   │   └── Tooltip.css
-│   ├── SidePanel/
-│   │   ├── SidePanel.tsx
-│   │   └── SidePanel.css
-│   └── Toolbar/
-│       ├── Toolbar.tsx
-│       └── Toolbar.css
-├── types/
-│   └── mindmap.ts
-├── utils/
-│   └── dataLoader.ts
-├── App.tsx
-├── App.css
-├── index.tsx
-└── index.css
-\\`
 
 ## Technologies Used
 
@@ -103,11 +73,6 @@ Replace the sample data in \\`dataLoader.ts\\` with your API endpoints or databa
 - Safari 14+
 - Edge 90+
 
-## License
-
-MIT License - feel free to use this project for personal or commercial purposes.
-
-This complete implementation provides a pixel-perfect recreation of the mindmap interface shown in your screenshot, with all the interactive features, styling, and functionality you requested. The codebase is production-ready, fully typed with TypeScript, and includes comprehensive documentation for easy deployment and customization.
 
 ## Architecture
 
